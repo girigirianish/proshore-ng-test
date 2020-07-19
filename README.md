@@ -1,6 +1,6 @@
 # Proshore Ng Test
 
-This is a project which contains use cases implemented as provided through email. The project has a single page which can be used to render three diffrent widget components dynamically clicking on three diffrent buttons.
+This is a project which contains use cases implemented as provided through email. The project has a single page which can be used to render three different widget components dynamically clicking on three diffrent buttons.
 
 ## Getting Started
 

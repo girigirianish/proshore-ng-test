@@ -8,7 +8,7 @@ export class WidgetCreaterService implements OnDestroy {
   private widgetContainerReference: ComponentRef<WidgetContainerComponent>;
   private readonly onDestroy: Subject<void> = new Subject<void>();
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     // lets clean it up
     this.onDestroy.next();
     this.onDestroy.complete();

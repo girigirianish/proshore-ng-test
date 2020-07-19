@@ -18,7 +18,7 @@ export class WidgetContainerComponent implements OnDestroy {
 
   constructor() {}
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     // lets wipe out child component
     if (this.childComponentReference) {
       this.childComponentReference.destroy();

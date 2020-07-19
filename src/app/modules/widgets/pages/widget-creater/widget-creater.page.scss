@@ -1,0 +1,31 @@
+.widget-creater-page {
+  h2 {
+    border-bottom: 2px solid #0ca4ff;
+    background: #0ca4ff;
+  }
+
+  h2:after {
+    background: #0ca4ff;
+  }
+  .widget-creater-butons-wrapper {
+    .button {
+      margin: 15px;
+      width: 280px;
+      height: 32px;
+      cursor: pointer;
+      border-radius: 6px;
+
+      &.widgeta {
+        background: #ffff00;
+      }
+
+      &.widgetb {
+        background: #e75480;
+      }
+
+      &.widgetc {
+        background: #8a2be2;
+      }
+    }
+  }
+}

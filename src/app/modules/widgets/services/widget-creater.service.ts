@@ -31,11 +31,11 @@ export class WidgetCreaterService implements OnDestroy {
     }
 
     /**
-     * go for attaching the modal container to the provided view container reference.
+     * go for attaching the  container to the provided view container reference.
      */
     this.widgetContainerReference = this.attachWidgetContainerToTarget(target);
-    const modalReference = this.attachWidget<T>(content, this.widgetContainerReference);
-    return modalReference;
+    const widgetReference = this.attachWidget<T>(content, this.widgetContainerReference);
+    return widgetReference;
   }
 
   /**
@@ -54,14 +54,14 @@ export class WidgetCreaterService implements OnDestroy {
    * Attach the widget to the widget to the widget container
    *
    * @param componentType widget that is to be attached to the container.
-   * @param modalContainer widget container component ref.
+   * @param widgetContainer widget container component ref.
    */
-  private attachWidget<T>(componentType: Type<T>, modalContainer: ComponentRef<WidgetContainerComponent>): ComponentRef<T> {
+  private attachWidget<T>(componentType: Type<T>, widgetContainer: ComponentRef<WidgetContainerComponent>): ComponentRef<T> {
     const componentFactory = this.componentFactory.resolveComponentFactory(componentType);
-    const viewContainerRef = modalContainer.instance.insertionPoint.viewContainerRef;
+    const viewContainerRef = widgetContainer.instance.insertionPoint.viewContainerRef;
     viewContainerRef.clear();
-    modalContainer.instance.childComponentReference = viewContainerRef.createComponent(componentFactory);
-    return modalContainer.instance.childComponentReference;
+    widgetContainer.instance.childComponentReference = viewContainerRef.createComponent(componentFactory);
+    return widgetContainer.instance.childComponentReference;
   }
 
   /**

@@ -11,7 +11,7 @@ Fork the repo
 
 ## Start the project
 
-The project is started with the regular ionic commands.
+The project is started with the regular ng commands.
 
 1. Run `npm install` to install all dependencies.
 2. Run `ng serve` to start the development environment.

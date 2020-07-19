@@ -17,6 +17,6 @@ import { WidgetCreaterService } from './services';
   ],
   imports: [CommonModule],
   providers: [WidgetCreaterService],
-  entryComponents: [WidgetFirstComponent, WidgetSecondComponent, WidgetThirdComponent, WidgetCreaterService]
+  entryComponents: [WidgetFirstComponent, WidgetSecondComponent, WidgetThirdComponent, WidgetContainerComponent]
 })
 export class WidgetsModule {}

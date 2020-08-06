@@ -1,0 +1,9 @@
+<gridster [options]="options">
+  <gridster-item
+    [item]="item"
+    *ngFor="let item of dashboard; let itemIndex = index"
+    [class.mat-elevation-z5]="editMode"
+    data-cy="dashboard-gridster-item"
+  >
+  </gridster-item>
+</gridster>

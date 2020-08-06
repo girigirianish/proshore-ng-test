@@ -5,6 +5,8 @@ import { WidgetFirstComponent, WidgetSecondComponent, WidgetThirdComponent, Widg
 import { WidgetCreaterPage } from './pages';
 import { InsertionDirective } from './directives';
 import { WidgetCreaterService } from './services';
+import { ModalContainerComponent } from './components/modal-container/modal-container.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -13,9 +15,10 @@ import { WidgetCreaterService } from './services';
     WidgetThirdComponent,
     WidgetCreaterPage,
     WidgetContainerComponent,
-    InsertionDirective
+    InsertionDirective,
+    ModalContainerComponent
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, MatDialogModule],
   providers: [WidgetCreaterService],
   entryComponents: [WidgetFirstComponent, WidgetSecondComponent, WidgetThirdComponent, WidgetContainerComponent]
 })
